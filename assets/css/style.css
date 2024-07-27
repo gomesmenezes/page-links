@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-background: rgba(212, 212, 212, 0.81);
+    --main-color: #3C5335;
+    --accente-color: #C4FFB2;
+    --dark-text: #000000;
+    --light-text: #FFFFFF;
+}
+
+body {
+    font-family: 'Arvo', 'Helvetica Neue', sans-serif;
+}
+
+#container-description {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#h1-description {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+span {
+    font-weight: bold;
+}
+
+#p-description {
+    font-weight: 500;
+    color: var(--dark-text);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    background-color: #3C5335;
+    border-radius: 15px;
+}
+
+.h1-card {
+    font-weight: 500;
+    font-size: 21px;
+    color: var(--light-text);
+}
+
+#social-medias {
+    display: flex;
+    gap: 40px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 430px) {
+    #container-description {
+        margin: 36px 20px 0px;
+    }
+
+    .card {
+        margin: 0px 20px 20px;
+        padding: 20px 30px;
+    }
+
+    .card:first-child {
+        margin-top: 40px;
+    }
+
+    #social-medias {
+        width: 320px;
+        margin: 46px auto;
+    }
+}
